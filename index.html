@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ninja of the Prism Edge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="overlay" class="overlay">
+    <div class="menu-panel" id="startMenu">
+      <h1>Ninja of the Prism Edge</h1>
+      <p>Step into Kaelen's journey through bamboo forests, frozen peaks, volcano caverns, and storm isles.</p>
+      <button id="playButton">Play</button>
+      <button id="weaponsButton">Weapons</button>
+      <button id="itemsButton">Items</button>
+      <button id="levelsButton">Levels</button>
+      <button id="saveButton">Save Game</button>
+      <button id="loadButton">Load Game</button>
+      <button id="creditsButton">Credits</button>
+      <div class="menu-footer">Use Arrow/WASD to move, Space to attack, E to switch weapon, Esc to pause.</div>
+    </div>
+
+    <div class="menu-panel hidden" id="weaponsMenu">
+      <h2>Weapons</h2>
+      <div id="weaponList" class="item-list"></div>
+      <button class="backButton">Back</button>
+    </div>
+
+    <div class="menu-panel hidden" id="itemsMenu">
+      <h2>Items</h2>
+      <div id="itemList" class="item-list"></div>
+      <button class="backButton">Back</button>
+    </div>
+
+    <div class="menu-panel hidden" id="levelsMenu">
+      <h2>Levels</h2>
+      <div id="levelList" class="item-list"></div>
+      <button class="backButton">Back</button>
+    </div>
+
+    <div class="menu-panel hidden" id="creditsMenu">
+      <h2>Credits</h2>
+      <p>Story inspired by Kaelen's path through Ki, elements, and balance.</p>
+      <p>Use save/load to preserve your progress between sessions.</p>
+      <button class="backButton">Back</button>
+    </div>
+
+    <div class="menu-panel hidden" id="pauseMenu">
+      <h2>Paused</h2>
+      <button id="resumeButton">Resume</button>
+      <button id="pauseSaveButton">Save Game</button>
+      <button id="pauseMainMenuButton">Main Menu</button>
+      <button class="backButton">Back</button>
+    </div>
+
+    <div class="menu-panel hidden cutscene-panel" id="cutsceneMenu">
+      <h2 id="cutsceneTitle"></h2>
+      <div class="scene-art" id="cutsceneArt"></div>
+      <p id="cutsceneText"></p>
+      <button id="cutsceneContinueButton">Continue</button>
+    </div>
+  </div>
+
+  <section class="game-panel" id="gamePanel">
+    <div class="hud">
+      <div id="statusText">Ready to begin your journey.</div>
+      <div class="hud-row">
+        <span id="currentLevel">Level: 1</span>
+        <span id="currentWeapon">Weapon: Whisper</span>
+        <span id="kiBar">Ki: 50 / 100</span>
+      </div>
+    </div>
+    <canvas id="gameCanvas" width="800" height="480"></canvas>
+    <div class="story-panel" id="storyPanel"></div>
+  </section>
+
+  <script src="game.js"></script>
+</body>
+</html>
