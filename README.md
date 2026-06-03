@@ -11,6 +11,8 @@ A browser-based ninja adventure game inspired by the legend of Kaelen and the Pr
 - Cinematic cutscenes before each major trial
 - Animated themed environments and upgraded canvas art
 - Weapon progression through elemental trials
+- Item selection with consumables like Ki Elixir, Shadow Cloak, and Storm Shard
+- Final bosses and a longer level progression through elemental trials
 - Simple canvas-based combat with movement, attack, and enemy encounters
 
 ## How to play

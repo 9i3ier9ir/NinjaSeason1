@@ -18,7 +18,7 @@
       <button id="saveButton">Save Game</button>
       <button id="loadButton">Load Game</button>
       <button id="creditsButton">Credits</button>
-      <div class="menu-footer">Use Arrow/WASD to move, Space to attack, E to switch weapon, Esc to pause.</div>
+      <div class="menu-footer">Use Arrow/WASD to move, Space to attack, E to switch weapon, Q to use item, Esc to pause.</div>
     </div>
 
     <div class="menu-panel hidden" id="weaponsMenu">
@@ -30,6 +30,7 @@
     <div class="menu-panel hidden" id="itemsMenu">
       <h2>Items</h2>
       <div id="itemList" class="item-list"></div>
+      <button id="useItemButton">Use Selected Item</button>
       <button class="backButton">Back</button>
     </div>
 
@@ -68,6 +69,7 @@
       <div class="hud-row">
         <span id="currentLevel">Level: 1</span>
         <span id="currentWeapon">Weapon: Whisper</span>
+        <span id="currentItem">Item: Ki Elixir</span>
         <span id="kiBar">Ki: 50 / 100</span>
       </div>
     </div>
